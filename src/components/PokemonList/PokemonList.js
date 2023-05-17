@@ -3,7 +3,7 @@ import axios from "axios";
 
 function PokemonList({ searchTerm = "" }) {
   const [pokemons, setPokemons] = useState([]);
-  const [filteredPokemons, setFilteredPokemons] = useState([]);
+  const [setFilteredPokemons] = useState([]);
 
   useEffect(() => {
     getData();
@@ -23,7 +23,6 @@ function PokemonList({ searchTerm = "" }) {
       pokemon.name.includes(searchTerm)
     );
 
-  
 
   return (
     <div>
