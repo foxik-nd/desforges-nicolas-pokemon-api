@@ -11,6 +11,7 @@ const App = () => {
 
   return (
     <div>
+      <label>SearchBar : </label>
       <input onChange={handleChange} />
 
       <PokemonList searchTerm={search} />
